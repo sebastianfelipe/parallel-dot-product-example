@@ -227,7 +227,7 @@ int main(int argc, char *argv[])
 		{
 			thread_args[i] = i*STEP;
 			error = pthread_create( &threads_tab[i], NULL, product, (void *)&thread_args[i]);
-	 		if (error) exit(4);
+	 		if (error) return 1;
 		}
 
 		for(unsigned i=0; i < THREADS; i++) pthread_join(threads_tab[i], NULL);
