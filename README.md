@@ -31,7 +31,7 @@ In terms of operations, a single operation is the calculation of one cell in the
 
 Each of those parameters can be modified by using the following sintaxis:
 
-./pdp -n \<N\> -m <M> -p <P> -t <THREADS>
+./pdp -n N -m M -p P -t THREADS
 
 Other commands:
 * --parallel or --p: Use it to run the program with the parallel version. In case you use the command "pdp -t 1", automatically it will assume that the program will be parallel, by using only 1 thread (there is no significance difference runing in paralell using 1 thread explicitly or just running it sequentially).
