@@ -1,4 +1,4 @@
-# parallel-dot-product-example
+# Parallel Dot Product Example
 
 This program generates 2 matrices:
 
