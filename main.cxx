@@ -210,12 +210,6 @@ int main(int argc, char *argv[])
 
 	// Threads init
 
-	std::cout << "Creating Threads..." << std::endl;
-	threads_tab = (pthread_t *)malloc( THREADS*sizeof(pthread_t));
-	thread_args = (unsigned *)malloc(sizeof(unsigned)*THREADS);
-	// if (DEBUG) std::cout << "Threads Initialized" << std::endl;
-	std::cout << "Threads Initialized" << std::endl;
-
 	// if (DEBUG) std::cout << "Run Program" << std::endl;
 	std::cout << "Run Program" << std::endl;
 
@@ -224,7 +218,11 @@ int main(int argc, char *argv[])
 	// Parallel Version
 	if (PARALLEL)
 	{
-
+		std::cout << "Creating Threads..." << std::endl;
+		threads_tab = (pthread_t *)malloc( THREADS*sizeof(pthread_t));
+		thread_args = (unsigned *)malloc(sizeof(unsigned)*THREADS);
+		// if (DEBUG) std::cout << "Threads Initialized" << std::endl;
+		std::cout << "Threads Initialized" << std::endl;
 		for (unsigned i = 0; i < THREADS; i++)
 		{
 			thread_args[i] = i*STEP;
