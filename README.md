@@ -22,7 +22,7 @@ The program has some default parameters, they are:
 * P: 10
 * THREADS: 1
 
-Some extra parameters that are fixed are:
+Some extra and fixed parameters are:
 * RANDOM VALUES: between 0 and 10
 * RANDOM SEED: 4
 
