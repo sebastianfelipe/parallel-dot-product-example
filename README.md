@@ -7,7 +7,7 @@ This program generates 2 matrices:
 
 The result is a matrix called C and has N rows by P columns
 
-Basically, the programs generate randomly the matrices A and B
+Basically, the program generates randomly the matrices A and B
 in a linear way (that is, not as a matrix itself, but as a long vector, i.e
 matrix A  is represented as a vector of NxM spaces only)
 
